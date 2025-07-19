@@ -1,0 +1,36 @@
+{
+  "id": 1,
+  "username": "testuser",
+  "email": "test@example.com",
+  "firstName": "Test",
+  "lastName": "User",
+  "role": "user",
+  "isVerified": true,
+  "createdAt": "2023-12-01T09:00:00.000Z",
+  "updatedAt": "2023-12-01T09:00:00.000Z",
+  "profile": {
+    "bio": "This is a test user profile.",
+    "location": "Test City",
+    "website": "https://example.com",
+    "avatar": "/avatars/default.png"
+  },
+  "preferences": {
+    "theme": "light",
+    "notifications": {
+      "email": true,
+      "push": false,
+      "sms": false
+    },
+    "privacy": {
+      "showEmail": false,
+      "showProfile": true
+    }
+  },
+  "stats": {
+    "postsCount": 5,
+    "likesReceived": 23,
+    "commentsReceived": 12,
+    "following": 8,
+    "followers": 15
+  }
+}

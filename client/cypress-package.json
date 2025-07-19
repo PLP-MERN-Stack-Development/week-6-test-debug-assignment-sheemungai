@@ -1,0 +1,14 @@
+{
+  "name": "cypress-config",
+  "version": "1.0.0",
+  "description": "Cypress configuration for E2E tests",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test:e2e": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^12.12.0"
+  }
+}

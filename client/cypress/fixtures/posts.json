@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "title": "First Test Post",
+    "content": "This is the content of the first test post. It contains multiple sentences and demonstrates typical post content.",
+    "author": {
+      "id": 1,
+      "username": "testuser",
+      "firstName": "Test",
+      "lastName": "User"
+    },
+    "createdAt": "2023-12-01T10:00:00.000Z",
+    "updatedAt": "2023-12-01T10:00:00.000Z",
+    "likes": 3,
+    "comments": [
+      {
+        "id": 1,
+        "content": "Great post!",
+        "author": {
+          "username": "commenter1",
+          "firstName": "Comment",
+          "lastName": "User"
+        },
+        "createdAt": "2023-12-01T11:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Second Test Post",
+    "content": "This is another test post with different content. It helps test the display of multiple posts.",
+    "author": {
+      "id": 2,
+      "username": "author2",
+      "firstName": "Author",
+      "lastName": "Two"
+    },
+    "createdAt": "2023-12-01T12:00:00.000Z",
+    "updatedAt": "2023-12-01T12:00:00.000Z",
+    "likes": 7,
+    "comments": []
+  },
+  {
+    "id": 3,
+    "title": "JavaScript Best Practices",
+    "content": "This post discusses JavaScript best practices including proper error handling, async/await patterns, and code organization.",
+    "author": {
+      "id": 1,
+      "username": "testuser",
+      "firstName": "Test",
+      "lastName": "User"
+    },
+    "createdAt": "2023-12-01T14:00:00.000Z",
+    "updatedAt": "2023-12-01T14:00:00.000Z",
+    "likes": 15,
+    "comments": [
+      {
+        "id": 2,
+        "content": "Very informative!",
+        "author": {
+          "username": "developer1",
+          "firstName": "Dev",
+          "lastName": "User"
+        },
+        "createdAt": "2023-12-01T15:00:00.000Z"
+      },
+      {
+        "id": 3,
+        "content": "Thanks for sharing these tips.",
+        "author": {
+          "username": "student1",
+          "firstName": "Student",
+          "lastName": "User"
+        },
+        "createdAt": "2023-12-01T16:00:00.000Z"
+      }
+    ]
+  }
+]

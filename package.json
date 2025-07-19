@@ -1,0 +1,36 @@
+{
+  "name": "mern-testing-app",
+  "version": "1.0.0",
+  "description": "MERN stack application with comprehensive testing",
+  "main": "server/src/index.js",
+  "scripts": {
+    "install-all": "npm install && npm install --prefix client && npm install --prefix server",
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "start": "node server/src/index.js",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm start",
+    "test": "jest",
+    "test:unit": "jest --selectProjects client server --testPathPattern=\"unit|__tests__\" --testPathIgnorePatterns=\"integration|e2e\"",
+    "test:integration": "jest --selectProjects server --testPathPattern=\"integration\"",
+    "test:e2e": "cd client && npm run test:e2e",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "setup-test-db": "cd server && npm run setup-test-db",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run install-all && npm run build"
+  },
+  "keywords": [
+    "mern",
+    "testing",
+    "jest",
+    "react",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "Student",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "jest": "^29.5.0"
+  }
+}
